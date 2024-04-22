@@ -1,0 +1,169 @@
+body{
+    background-color: black;
+    margin: none;
+}
+.wrapper{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glow{
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-radius: 200px;
+    box-shadow: 0px 0px 400px 200px whitesmoke;
+    animation: shadow 6s linear infinite;
+}
+@keyframes shadow {
+    0% {
+      left: 0%;
+      top: 100%;
+    }
+    20% {
+      left: 50%;
+      top: 15%;
+    }
+    30% {
+      left: 100%;
+      top: 50%;
+    }
+    40% {
+      left: 70%;
+      top: 100%;
+    }
+    70% {
+      left: -100%;
+      top: -100%;
+    }
+    80% {
+      left: -100%;
+      top: 200%
+    }
+    85% {
+      left: 500%;
+      top: 200%;
+    }
+    95% {
+      left: 50%;
+      top: 80%;
+    }
+}  
+#cup-area{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 2rem 2rem 2rem;
+    width: 95%;
+    height: 92vh;
+    background: rgb(32, 69, 218) ;
+    opacity: 80%;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    box-shadow: 0px 0px 40px 20px rgb(0, 42, 255) ;
+    
+}
+#cup{
+    position: absolute;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 1s linear alternate infinite;
+  transform: rotate(-10deg);
+
+}
+@keyframes rotate {
+    to{transform: rotate(10deg)}
+  }
+
+  .main {
+    height: 250px;
+    width: 200px;
+    /* background: gold; */
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  .stem1 {
+    position: fixed;
+    top: 190px;
+      border-bottom: 100px solid gold;
+      border-left: 50px dotted transparent;
+      border-right: 50px dotted transparent;
+      height: 0px;
+      width: 40px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    transform: rotate(180deg);
+
+  }
+  .stem2 {
+    position: absolute;
+    top: 280px;
+      border-bottom: 100px solid gold;
+      border-left: 50px dotted transparent;
+      border-right: 50px dotted transparent;
+      height: 0;
+      width: 40px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    
+  }
+  .base {
+    position: fixed;
+    width: 180px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    background: black;
+    height: 20px;
+    top: 380px;
+  }
+  .arms {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    background: gold;
+    z-index: -1;
+    border: #ddba00 5px dotted;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  
+  }
+  .stemCrease {
+    position: absolute;
+    width: 60px;
+    height: 15px;
+    border-radius: 10px;
+    border: dotted gold;
+    background: #ddba00;
+    top: 280px;
+    z-index: 1;
+  }
+  .star {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    top: 15px;
+    left: 100px;
+    transform-origin: center;
+    animation: shimmer .4s alternate infinite linear;
+  }
+  @keyframes shimmer {
+    to{transform: rotate(20deg)}
+  }
+/* #bottom-cup{
+    position:absolute;
+    background-color: aliceblue;
+    height: 300px;
+    width: 40px;
+    margin-top: 18%;
+    margin-left: 44%;
+    border-radius: -35rem -5rem -10rem -10rem;
+    border: 20px 2px 2px 2px gold;
+
+} */
